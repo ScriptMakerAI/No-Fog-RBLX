@@ -1,0 +1,11 @@
+-- Find the Lighting service
+local lighting = game:GetService("Lighting")
+
+-- Disable the fog
+lighting.FogEnd = math.huge
+lighting.FogStart = math.huge
+
+-- Disable the atmospheric fog
+lighting.Atmosphere = false
+
+print("Fog has been disabled.")
